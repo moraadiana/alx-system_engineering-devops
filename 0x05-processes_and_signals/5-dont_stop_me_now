@@ -1,0 +1,16 @@
+# 4-to_infinity_and_beyond_stop
+#!/usr/bin/env bash
+# This script stops the process started by 5-dont_stop_me_now
+
+# Get the process ID (PID) of the running script
+process_pid=$(pgrep -f "5-dont_stop_me_now")
+
+# Check if the process is running
+if [ -n "$process_pid" ]; then
+    # Use kill to stop the process
+    kill "$process_pid"
+    echo "Terminated"
+else
+    echo "Process is not running"
+fi
+
