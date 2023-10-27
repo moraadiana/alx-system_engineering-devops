@@ -7,7 +7,7 @@ hour=0
 # Using a while loop to iterate through hours
 while [ $hour -lt 12 ]; do
     echo "Hour: $hour"
-    
+
     # Counter variable for minutes
     minute=1
 
@@ -16,7 +16,9 @@ while [ $hour -lt 12 ]; do
         echo $minute
         ((minute++))
     done
-    
+
+    # Reset the minute counter
+    minute=1
+
     ((hour++))
 done
-
