@@ -1,0 +1,7 @@
+#!/bin/bash
+# manage_my_process - Bash script to indefinitely write "I am alive!" to a file
+
+while true; do
+    echo "I am alive!" >> /tmp/my_process
+    sleep 2
+done
