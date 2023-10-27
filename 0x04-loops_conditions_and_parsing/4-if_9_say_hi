@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script displays "Best School" 10 times and says "Hi" on the 9th iteration
+#display "Best School" 10 times and says "Hi" on the 9th iteration
 
 # Counter variable
 counter=0
