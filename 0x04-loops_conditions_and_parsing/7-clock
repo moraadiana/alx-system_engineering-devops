@@ -1,24 +1,14 @@
 #!/usr/bin/env bash
-# This script displays the time for 12 hrs and 59 mins
+# Displays 'Best School'. Displays Hi on the 9th iteration
 
-# Counter variables for hours and minutes
-hour=0
+index=0
 
-# Using a while loop to iterate through hours
-while [ $hour -lt 12 ]; do
-    echo "Hour: $hour"
-
-    # Counter variable for minutes
-    minute=1
-
-    # Using a nested while loop to iterate through minutes
-    while [ $minute -lt 60 ]; do
-        echo $minute
-        ((minute++))
-    done
-
-    # Reset the minute counter
-    minute=1
-
-    ((hour++))
+while [ $index -lt 10 ]
+do
+  if [ $index -eq 9 ]
+  then
+    echo "Hi"
+  fi
+  echo "Best School"
+  (( index++ ))
 done
