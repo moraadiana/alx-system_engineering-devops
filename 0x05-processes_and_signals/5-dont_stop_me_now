@@ -1,15 +1,4 @@
 #!/usr/bin/env bash
-# This script stops the 4-to_infinity_and_beyond process
+# Kills the 4-to_infinity_and_beyond process
 
-# Running the process in the background
-./4-to_infinity_and_beyond &
-
-# Storing the process ID (PID)
-PID=$!
-
-# Waiting for a while (you can adjust this time)
-sleep 2
-
-# Stopping the process using kill
-kill $PID
-
+kill "$(pgrep -f 4-to_infinity_and_beyond)"
