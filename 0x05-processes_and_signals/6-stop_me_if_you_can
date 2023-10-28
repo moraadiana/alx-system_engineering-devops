@@ -1,13 +1,4 @@
 #!/usr/bin/env bash
-# This script stops the 4-to_infinity_and_beyond process
+# Kills the 4-to_infinity_and_beyond process.
 
-# Running the process in the background
-./4-to_infinity_and_beyond &
-
-# Storing the process ID (PID)
-PID=$!
-
-# Waiting for the process to complete
-wait $PID
-
-echo "Terminated"
+pkill -f 4-to_infinity_and_beyond
