@@ -1,1 +1,1 @@
-config management
+config management assignmrnt
