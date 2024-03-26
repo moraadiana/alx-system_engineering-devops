@@ -33,4 +33,3 @@ if __name__ == "__main__":
                 row.append(i['title'])
 
                 writ.writerow(row)
-                
